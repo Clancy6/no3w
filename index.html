@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
         }
         header {
             text-align: center;
@@ -21,6 +22,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            min-height: calc(100vh - 110px); /* 让主要内容至少占满视窗高度减去页脚高度 */
         }
         footer {
             text-align: center;
@@ -31,8 +33,6 @@
             bottom: 0;
             width: 100%;
         }
-
-        /* 添加响应式样式 */
         @media screen and (max-width: 600px) {
             main {
                 max-width: 90%;
