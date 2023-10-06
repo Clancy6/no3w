@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No3w.com | .www устарел</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    li {
+      color: #666;
+    }
+    
+    right {
+      text-align: right;
+    }
+    
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+    
+    .footer p {
+      margin: 0;
+    }
+    
+    .footer a {
+      color: #333;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Почему .www устарел?</h1>
+
+  <p>Чтобы ответить на этот вопрос, нам необходимо сначала вспомнить определение WWW:</p>
+
+  <ul>
+    <li>Полный набор документов, расположенных на всех интернет-серверах, использующих протокол HTTP, доступных пользователям через простую систему щелчков мышью.</li>
+    <li>Сборник интернет-сайтов, предлагающих текст, графику, звуковые и анимационные ресурсы через протокол передачи гипертекста.</li>
+  </ul>
+
+  <p>По умолчанию все популярные веб-браузеры предполагают использование протокола HTTP. При этом программное обеспечение добавляет "http://" в начало запрашиваемого URL-адреса и автоматически подключается к HTTP-серверу на порту 80. Зачем, тогда, многие серверы требуют своим веб-сайтам взаимодействовать через поддомен www? Почтовые серверы не требуют отправки писем на recipient@mail.no3w.com. Аналогично, веб-серверы должны разрешать доступ к своим страницам через основной домен, если только не требуется использование определенного поддомена.</p>
+
+  <p>Кратко говоря, использование поддомена www является избыточным и замедляет коммуникацию. Интернет, медиа и общество в целом прекрасно обходятся без него.</p>
+
+  <right><p>--с no-www.org</p></right>
+</body>
+<footer class="footer">
+  <p>&copy; <span id="year"></span> No3W.com. Все права защищены.</p>
+</footer>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</html>

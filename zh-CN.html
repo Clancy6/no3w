@@ -1,0 +1,70 @@
+DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No3w.com | .www已被弃用</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    li {
+      color: #666;
+    }
+    
+    right {
+      text-align: right;
+    }
+    
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+    
+    .footer p {
+      margin: 0;
+    }
+    
+    .footer a {
+      color: #333;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>.www为什么被弃用？</h1>
+
+  <p>为了回答这个问题，我们首先需要回忆一下WWW的定义：</p>
+
+  <ul>
+    <li>所有使用HTTP协议的互联网服务器上托管的完整文档集合，通过简单的点按系统对用户可用。</li>
+    <li>通过超文本传输协议提供文本、图形、声音和动画资源的互联网站集合。</li>
+  </ul>
+
+  <p>默认情况下，所有流行的网络浏览器都假定使用HTTP协议。这样做的话，软件会在请求的URL之前添加“http://”，并自动连接到端口80上的HTTP服务器。那么为什么许多服务器要求其网站只通过www子域名进行通信呢？邮件服务器不要求您将电子邮件发送到recipient@mail.no3w.com。同样，Web服务器应该允许通过主域名访问其页面，除非需要特定的子域名。</p>
+
+  <p>简而言之，使用www子域名是多余和耗时的通信方式。没有它，互联网、媒体和社会都会更好。</p>
+
+  <right><p>--来自<em>no-www.org</em></p></right>
+</body>
+<footer class="footer">
+  <p>&copy; <span id="year"></span> No3W.com。保留所有权利。</p>
+</footer>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</html>

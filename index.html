@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to no3w.com</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-        }
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            min-height: calc(100vh - 110px); /* 让主要内容至少占满视窗高度减去页脚高度 */
-        }
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-        @media screen and (max-width: 600px) {
-            main {
-                max-width: 90%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No3w.com | .www is deprecated</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    li {
+      color: #666;
+    }
+    
+    right {
+      text-align: right;
+    }
+    
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+    
+    .footer p {
+      margin: 0;
+    }
+    
+    .footer a {
+      color: #333;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to no3w.com</h1>
-    </header>
-    <main>
-        <h2>Our Website's Features</h2>
-        <p>
-            Welcome to no3w.com, the website that advocates for a simpler web! Our mission is to make web addresses more user-friendly and easy to remember.
-        </p>
-        <p>
-            At no3w.com, you'll find:
-        </p>
-        <ul>
-            <li><strong>Simplified Web Addresses:</strong> We help you create and manage web addresses without unnecessary subdomains.</li>
-            <li><strong>Effortless Navigation:</strong> Navigate websites with ease, without the need for additional prefixes like "www".</li>
-            <li><strong>Expert Advice:</strong> Discover tips and best practices for managing your domains efficiently.</li>
-        </ul>
-        <p>
-            Join us in embracing a cleaner and more user-friendly web experience. Say goodbye to the clutter, and hello to simplicity!
-        </p>
-    </main>
-    <footer>
-        &copy; 2023 no3w.com. All Rights Reserved.
-    </footer>
+  <right><a href="/index.html">🇬🇧</a> <a href="/zh-CN.html">🇨🇳</a> <a href="/ru.html">🇷🇺</a> <a href="/fr.html">🇫🇷</a></right>
+  <h1>Why is .www deprecated?</h1>
+
+  <p>In order to answer this question, we must first recall the definition of WWW:</p>
+
+  <ul>
+    <li>The complete set of documents residing on all Internet servers that use the HTTP protocol, accessible to users via a simple point-and-click system.</li>
+    <li>A collection of internet sites that offer text and graphics and sound and animation resources through the hypertext transfer protocol.</li>
+  </ul>
+
+  <p>By default, all popular Web browsers assume the HTTP protocol. In doing so, the software prepends the 'http://' onto the requested URL and automatically connect to the HTTP server on port 80. Why then do many servers require their websites to communicate through the www subdomain? Mail servers do not require you to send emails to recipient@mail.no3w.com. Likewise, web servers should allow access to their pages though the main domain unless a particular subdomain is required.</p>
+
+  <p>Succinctly, use of the www subdomain is redundant and time-consuming to communicate. The internet, media, and society are all better off without it.</p>
+
+  <right><p>--from <em>no-www.org</em></p></right>
 </body>
+<footer class="footer">
+  <p>&copy; <span id="year"></span> No3W.com. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </html>
